@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  </head>
+
+  <body>
+    <h1> Thank you for coming to our website and provide us your personal information.
+      Trust us! We will make you greater!
+    </h1>
+    <form id="register">
+      <div>
+        <label for="fname">First Name</label>
+        <input form="register" name="flibberty" id="fname" required />
+      </div>
+      <div>
+        <label for="lname">Last Name</label>
+        <input form="register" name="lname" id="lname" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input form="register" type="email" name="email" id="email" required minlength="10" maxlength="100" />
+      </div>
+      <div>
+        <label for="phonenumber">Phone Number</label>
+        <input form="register" type="text" id="phonenumber" required minlength="10" pattern="\d{3}-\d{3}-\d{4}" title="Please enter full-phone-number. For example: 000-000-0000"/>
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input form="register" type="number" id="age" required minlength="1" maxlength="3" />
+      </div>
+      <div>
+        <label for="DOB">DOB</label>
+        <input form="register" type="date" id="DOB" required minlength="8" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input form="register" type="password" id="password" required minlength="3" />
+      </div>
+      <div>
+        <label for="password2">Password Confirmation</label>
+        <input form="register" type="password" id="password2" required minlength="3" />
+      </div>
+    </form>
+    <input form="register" type="submit" value="submit" formmethod="GET" class="button-primary"></input>
+
+  </body>
+</html>
